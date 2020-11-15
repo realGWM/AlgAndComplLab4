@@ -107,10 +107,10 @@ fn worker(sizes_iter: StepBy<RangeInclusive<usize>>, rng: &mut ThreadRng, n: u32
 }
 
 fn is_prime(num: u32) -> bool {
-    let sqrt = (num as f64).sqrt() as u32;
     if num < 2 {
         return false;
     }
+    let sqrt = (num as f64).sqrt() as u32;
     for i in 2..=sqrt {
         if num % i == 0 {
             return false;
