@@ -1,0 +1,18 @@
+# task2:
+O(N)
+where N is the size of s
+# task3:
+O(N*M)
+where N and M are height and width of the matrix
+alternatively, we can say that it is O(N) where N is the amount of elements in the matrix.
+# task4:
+O(1)
+# task5:
+A tought one for me.
+It's obvious that the best case is O(1) (the first elemest is true).
+It's also obvious that the worst case is O(N) (all the elements are false).
+But what is the average case?..
+I'd say O(N) but I don't know how to prove it...
+# task6:
+O(N^2)
+where N is the size of vec
