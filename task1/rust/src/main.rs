@@ -41,7 +41,7 @@ fn worker_gen_sizes(rng: &mut ThreadRng, n: u32) -> Result {
 }
 
 fn worker(sizes_iter: StepBy<RangeInclusive<usize>>, rng: &mut ThreadRng, n: u32) -> Result {
-    let dist = Uniform::new_inclusive(0, n);
+    let dist = Uniform::new_inclusive(1, n);
 
     //Yeah, the same reason as before...
     let mut simple_useless_variable: usize = 0;
